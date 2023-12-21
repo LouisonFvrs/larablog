@@ -11,5 +11,6 @@ class ArticleController extends Controller
     public function like ($id) {
         Article::where('id', $id)->increment('like');
         return redirect()->back();
+
     }
 }
